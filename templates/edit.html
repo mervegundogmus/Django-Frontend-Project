@@ -1,0 +1,173 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %} Düzenle {% endblock %}
+
+{% block head %}{% endblock %}
+
+{% block content %}
+
+
+
+    <div class="container mt-4">
+       <div class="row flex-lg-nowrap">
+  <div class="col">
+    <div class="row">
+      <div class="col mb-3">
+        <div class="card">
+          <div class="card-body">
+            <div class="e-profile">
+              <div class="row">
+                <div class="col-12 col-sm-auto mb-3">
+                  <div class="mx-auto" style="width: 140px;">
+                    
+                      <div class="profile mr-3"><img src="{% static 'images/user_photo.jpg' %}"  width="140" class="rounded mb-2 img-thumbnail">
+                    </div>
+                  </div>
+                </div>
+                <div class="col d-flex flex-column flex-sm-row justify-content-between mb-3">
+                  <div class="text-center text-sm-left mb-2 mb-sm-0">
+                    <h4 class="pt-sm-2 pb-1 mb-0 text-nowrap">Mark Williams</h4>
+                    <p class="mb-0">@markwillams</p>
+                    <div class="text-muted"><small>2 saat önce aktifti</small></div>
+                    <div class="mt-2">
+                      <button class="btn btn-primary" type="button">
+                        <i class="fa fa-fw fa-camera"></i>
+                        <span>Fotoğraf Değiştir</span>
+                      </button>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+              <ul class="nav nav-tabs">
+                <li class="nav-item"><a href="" class="active nav-link">Ayarlar</a></li>
+              </ul>
+              <div class="tab-content pt-3">
+                <div class="tab-pane active">
+                  <form class="form" novalidate="">
+                    <div class="row">
+                      <div class="col">
+                        <div class="row">
+                          <div class="col">
+                            <div class="form-group">
+                              <label>Adı Soyad</label>
+                              <input class="form-control" type="text" name="name" placeholder="Mark Williams" value="Mark Williams">
+                            </div>
+                          </div>
+                          <div class="col">
+                            <div class="form-group">
+                              <label>Kullanıcı Adı</label>
+                              <input class="form-control" type="text" name="username" placeholder="markwillams" value="markwillams">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col">
+                            <div class="form-group">
+                              <label>E-mail</label>
+                              <input class="form-control" type="text" placeholder="mark@mark.com">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col mb-3">
+                            <div class="form-group">
+                              <label>Hakkında</label>
+                              <textarea class="form-control" rows="5" placeholder="Web Developer New York'ta Yaşıyor Fotoğrafçı"></textarea>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12 col-sm-6 mb-3">
+                        <div class="mb-2"><b>Parolayı Değiştir</b></div>
+                        <div class="row">
+                          <div class="col">
+                            <div class="form-group">
+                              <label>Şimdiki Parola</label>
+                              <input class="form-control" type="password" placeholder="••••••">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col">
+                            <div class="form-group">
+                              <label>Yeni Parola</label>
+                              <input class="form-control" type="password" placeholder="••••••">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col">
+                            <div class="form-group">
+                              <label>Parola <span class="d-none d-xl-inline">Onayla</span></label>
+                              <input class="form-control" type="password" placeholder="••••••"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12 col-sm-5 offset-sm-1 mb-3">
+                        <div class="mb-2"><b>İletişimde Kalın!</b></div>
+                        <div class="row">
+                          <div class="col">
+                            <label>E-mail Bildirimleri</label>
+                            <div class="custom-controls-stacked px-2">
+                              <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="notifications-blog" checked="">
+                                <label class="custom-control-label" for="notifications-blog">Blog gönderileri</label>
+                              </div>
+                              <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="notifications-news" checked="">
+                                <label class="custom-control-label" for="notifications-news">Bülten</label>
+                              </div>
+                              <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="notifications-offers" checked="">
+                                <label class="custom-control-label" for="notifications-offers">Kişisel Teklifler</label>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col d-flex justify-content-end">
+                        <button class="btn btn-primary" type="submit">Değişiklikleri Kaydet</button>
+                      </div>
+                    </div>
+                  </form>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-3 mb-3">
+        <div class="card mb-3">
+          <div class="card-body">
+            <div class="px-xl-3">
+              <button class="btn btn-block btn-secondary">
+                <i class="fa fa-sign-out"></i>
+                <span>Çıkış</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <h6 class="card-title font-weight-bold">Destek</h6>
+            <p class="card-text">Güler yüzlü asistanlarımızdan hızlı ve ücretsiz yardım alın.</p>
+            <button type="button" class="btn btn-danger">Hesabı Sil</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+    </div>
+
+
+{% endblock content %}
