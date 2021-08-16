@@ -26,3 +26,6 @@ class FollowingView(TemplateView):
 
 class PostsView(TemplateView):
     template_name='posts.html'
+
+class ListsView(TemplateView):
+    template_name='lists.html'

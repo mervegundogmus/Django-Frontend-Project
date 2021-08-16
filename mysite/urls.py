@@ -7,7 +7,7 @@ from .views import FollowersView
 from .views import FollowingView
 from .views import EditView
 from .views import PostsView
-
+from .views import ListsView
 
 urlpatterns = [
     path('', AnasayfaView.as_view(),name='anasayfa'),
@@ -18,4 +18,5 @@ urlpatterns = [
     path('followers/', FollowersView.as_view(),name='takipciler'),
     path('following/', FollowingView.as_view(),name='takipedilen'),
     path('posts/', PostsView.as_view(),name='gonderiler'),
+    path('lists/', ListsView.as_view(),name='listeler'),
 ]
