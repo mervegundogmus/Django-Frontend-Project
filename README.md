@@ -14,11 +14,11 @@ mkvirtualenv sanal_ortam
 workon sanal_ortam<br>
 python manage.py runserver
 
-# Profil Page
+# Profil Page 👤
 ![github](static/images/git-4.png)<br>
 
-# Post Page
+# Post Page 📷
 ![github](static/images/git-2.png)<br>
 
-# Follower Page
+# Follower Page 👣
 ![github](static/images/git-3.png)<br>
