@@ -1,6 +1,6 @@
 # Django-Frontend-Project
 
-## Before running this project you need intall below list apps and packages
+## Before running this project you need install below list apps and packages
 
 Install Python 3.9 or above -> https://www.python.org/<br>
 Install Pip   -> python get-pip.py<br>
