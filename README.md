@@ -15,6 +15,6 @@ workon sanal_ortam<br>
 python manage.py runserver
 
 # Home Pages
-![github](static/images/git-1.png)<br>
+![github](static/images/git-4.png)<br>
 ![github](static/images/git-2.png)<br>
 ![github](static/images/git-3.png)<br>
